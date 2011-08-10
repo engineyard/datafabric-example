@@ -1,0 +1,49 @@
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: vr_test
+  pool: 5
+  username: root
+  password: har526
+  socket: /tmp/mysql.sock
+
+fiveruns_city_austin_test_master:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: vr_austin
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql1.sock
+
+fiveruns_city_austin_test_slave:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: vr_austin
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql2.sock
+
+fiveruns_city_dallas_test_master:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: vr_dallas
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql3.sock
+
+fiveruns_city_dallas_test_slave:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: vr_dallas
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql4.sock
